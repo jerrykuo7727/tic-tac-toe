@@ -1,5 +1,5 @@
 # Tic-Tac-Toe
-This is a tic tac toe made with ruby.
+A tic-tac-toe written in Ruby with tests of RSpec.
 
 The grid is mapped as numbers on numpad,
 1-9 from buttom to top, left to right.
