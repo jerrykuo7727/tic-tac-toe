@@ -1,4 +1,4 @@
-# Tic-Tac-Toe
+# Tic-tac-toe
 A tic-tac-toe written in Ruby with tests of RSpec.
 
 The grid is mapped as numbers on numpad,
