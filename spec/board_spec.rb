@@ -27,4 +27,14 @@ describe Board do
       end
     end
   end
+
+  describe "#switch" do
+    context "given 'O' as initial turn" do
+      it "change turn to 'X' and returns it" do
+        expect(board.turn).to eql("Ｏ")
+        board.send(:switch)
+        expect(board.turn).to eql("Ｘ")
+      end
+    end
+  end
 end

@@ -50,7 +50,7 @@ class Board
   private
 
   def draw(num)	 
-    @blocks[num] = @turn
+    @blocks[num] = turn
     switch
     @round += 1
   end
