@@ -30,10 +30,20 @@ describe Board do
 
   describe "#switch" do
     context "given 'O' as initial turn" do
-      it "change turn to 'X' and returns it" do
+      it "changes turn to 'X' and returns it" do
         expect(board.turn).to eql("Ｏ")
         board.send(:switch)
         expect(board.turn).to eql("Ｘ")
+      end
+    end
+  end
+
+  describe "#draw" do
+    context "given index number" do
+      it "draws at the specific space" do
+        turn = board.turn
+        board.send(:draw, 8)
+        expect(board.instance_variable_get(:@blocks)[8]).to eql(turn)
       end
     end
   end
